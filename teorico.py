@@ -85,6 +85,125 @@ pa.mouseUp(x=579, y=191, button='left')
 pa.press("enter")
 pa.press("enter")
 pa.hotkey('alt', 'f4')
-
-#pregunta al usuario si esta contento con lo que e hizo
-pa.alert("¡Eh terminado , preciona aceptar para cerrar el programa!", button="Aceptar")
+#pregunta para volver a cargar otra tp
+pregunta = print("¿Quieres volver a cargar otra tp ?")
+print("s.Si n.NO")
+primera = input("  Elija una opcion (s o n): ")
+if primera == "s":
+    #abrimos el programa de comunicacion de la pc a una tp
+    subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"])
+    pa.pause=5
+    pa.hotkey('alt', 'tab')
+    pa.hotkey('alt', 'tab')
+    pa.alert("Por favor conecta la tp a la PC y espera que aparezca conectado... \r\n Cuando termine de conectar dar aceptar" ,  "Conectar la Tp a la PC")
+    #da click en la opcion
+    pa.click(x=546, y=204, duration=1.5)
+    pa.click(x=598, y=496, duration = 1.0)
+    pa.press("down")
+    pa.press("enter")
+    pa.PAUSE=2
+    #pa.click(x=593, y=195, duration=1.5)
+    pa.mouseDown(x=561, y=291, button='left', duration=1.0)
+    pa.mouseUp(x=579, y=191, button='left')
+    pa.press("enter")
+    pa.press("enter")
+    pa.hotkey('alt', 'f4')
+    #pregunta para volver a cargar otra tp
+    pregunta = print("¿Quieres volver a cargar otra tp ?")
+    print("s.Si n.NO")
+    primera = input("  Elija una opcion (s o n): ")
+if primera == "s":
+    #abrimos el programa de comunicacion de la pc a una tp
+    subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"])
+    pa.pause=5
+    pa.hotkey('alt', 'tab')
+    pa.hotkey('alt', 'tab')
+    pa.alert("Por favor conecta la tp a la PC y espera que aparezca conectado... \r\n Cuando termine de conectar dar aceptar" ,  "Conectar la Tp a la PC")
+    #da click en la opcion
+    pa.click(x=546, y=204, duration=1.5)
+    pa.click(x=598, y=496, duration = 1.0)
+    pa.press("down")
+    pa.press("enter")
+    pa.PAUSE=2
+    #pa.click(x=593, y=195, duration=1.5)
+    pa.mouseDown(x=561, y=291, button='left', duration=1.0)
+    pa.mouseUp(x=579, y=191, button='left')
+    pa.press("enter")
+    pa.press("enter")
+    pa.hotkey('alt', 'f4')
+    #pregunta para volver a cargar otra tp
+    pregunta = print("¿Quieres volver a cargar otra tp ?")
+    print("s.Si n.NO")
+    primera = input("  Elija una opcion (s o n): ")
+if primera == "s":
+    #abrimos el programa de comunicacion de la pc a una tp
+    subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"])
+    pa.pause=5
+    pa.hotkey('alt', 'tab')
+    pa.hotkey('alt', 'tab')
+    pa.alert("Por favor conecta la tp a la PC y espera que aparezca conectado... \r\n Cuando termine de conectar dar aceptar" ,  "Conectar la Tp a la PC")
+    #da click en la opcion
+    pa.click(x=546, y=204, duration=1.5)
+    pa.click(x=598, y=496, duration = 1.0)
+    pa.press("down")
+    pa.press("enter")
+    pa.PAUSE=2
+    #pa.click(x=593, y=195, duration=1.5)
+    pa.mouseDown(x=561, y=291, button='left', duration=1.0)
+    pa.mouseUp(x=579, y=191, button='left')
+    pa.press("enter")
+    pa.press("enter")
+    pa.hotkey('alt', 'f4')
+    #pregunta para volver a cargar otra tp
+    pregunta = print("¿Quieres volver a cargar otra tp ?")
+    print("s.Si n.NO")
+    primera = input("  Elija una opcion (s o n): ")
+if primera == "s":
+    #abrimos el programa de comunicacion de la pc a una tp
+    subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"])
+    pa.pause=5
+    pa.hotkey('alt', 'tab')
+    pa.hotkey('alt', 'tab')
+    pa.alert("Por favor conecta la tp a la PC y espera que aparezca conectado... \r\n Cuando termine de conectar dar aceptar" ,  "Conectar la Tp a la PC")
+    #da click en la opcion
+    pa.click(x=546, y=204, duration=1.5)
+    pa.click(x=598, y=496, duration = 1.0)
+    pa.press("down")
+    pa.press("enter")
+    pa.PAUSE=2
+    #pa.click(x=593, y=195, duration=1.5)
+    pa.mouseDown(x=561, y=291, button='left', duration=1.0)
+    pa.mouseUp(x=579, y=191, button='left')
+    pa.press("enter")
+    pa.press("enter")
+    pa.hotkey('alt', 'f4')
+    #pregunta para volver a cargar otra tp
+    pregunta = print("¿Quieres volver a cargar otra tp ?")
+    print("s.Si n.NO")
+    primera = input("  Elija una opcion (s o n): ")
+if primera == "s":
+    #abrimos el programa de comunicacion de la pc a una tp
+    subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"])
+    pa.pause=5
+    pa.hotkey('alt', 'tab')
+    pa.hotkey('alt', 'tab')
+    pa.alert("Por favor conecta la tp a la PC y espera que aparezca conectado... \r\n Cuando termine de conectar dar aceptar" ,  "Conectar la Tp a la PC")
+    #da click en la opcion
+    pa.click(x=546, y=204, duration=1.5)
+    pa.click(x=598, y=496, duration = 1.0)
+    pa.press("down")
+    pa.press("enter")
+    pa.PAUSE=2
+    #pa.click(x=593, y=195, duration=1.5)
+    pa.mouseDown(x=561, y=291, button='left', duration=1.0)
+    pa.mouseUp(x=579, y=191, button='left')
+    pa.press("enter")
+    pa.press("enter")
+    pa.hotkey('alt', 'f4')
+    #pregunta para volver a cargar otra tp
+    pregunta = print("¿Quieres volver a cargar otra tp ?")
+    print("s.Si n.NO")
+    primera = input("  Elija una opcion (s o n): ")
+#cierre de la pregunta
+if primera == "n":
+    pa.alert("¡Eh terminado , preciona aceptar para cerrar el programa!", button="Aceptar")#pregunta al usuario si esta contento con lo que e hizo
