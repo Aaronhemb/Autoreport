@@ -11,7 +11,6 @@ import pyautogui as pa #se renombra para que sea mas facil la escritura
 import random
 import mouse
 import sys
-import remove
 from win32api import GetSystemMetrics
 
 #alerta para ejecutar el programa
@@ -47,7 +46,7 @@ pa.press('down')
 pa.press('down')
 pa.press('down')
 pa.press("f10")
-pa.PAUSE= 1
+pa.PAUSE=1
 #seleccionamos la tecla derecha (inventario)
 pa.press(['right','enter','enter',])
 pa.press(['enter','enter','enter'])
@@ -57,17 +56,35 @@ pa.write('0020')
 pa.press("enter")
 pa.press("f10")
 pa.press("enter")
-pa.pause= 1
+pa.pause=4.0
 #cerramos la cuenta de puty
-pa.hotkey('alt', 'f4')
+pa.hotkey('alt', 'f4',)
+pa.pause=4.0
 pa.press("enter")
-pa.pause= 1
-
+#ejecutamos el archivo bat que elimina los archivos antenieriores
+subprocess.Popen(["C:\Inventario\delete.bat"])
 #iniciarmos el programa de inventario para correr los archivos
+pa.pause=1
 subprocess.Popen(["C:\Sistemas\Inventario\Inv_Rec.bat"])
-
-pa.pause= 1
-
+pa.pause=5
+#abrimos el programa de comunicacion de la pc a una tp
+subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"])
+pa.pause=5
+pa.hotkey('alt', 'tab')
+pa.hotkey('alt', 'tab')
+pa.alert("Por favor conecta la tp a la PC y espera que aparezca conectado... \r\n Cuando termine de conectar dar aceptar" ,  "Conectar la Tp a la PC")
+#da click en la opcion
+pa.click(x=546, y=204, duration=1.5)
+pa.click(x=598, y=496, duration = 1.0)
+pa.press("down")
+pa.press("enter")
+pa.PAUSE=2
+#pa.click(x=593, y=195, duration=1.5)
+pa.mouseDown(x=561, y=291, button='left', duration=1.0)
+pa.mouseUp(x=579, y=191, button='left')
+pa.press("enter")
+pa.press("enter")
+pa.hotkey('alt', 'f4')
 
 #pregunta al usuario si esta contento con lo que e hizo
 pa.alert("¡Eh terminado , preciona aceptar para cerrar el programa!", button="Aceptar")
