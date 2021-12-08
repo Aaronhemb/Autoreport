@@ -14,8 +14,6 @@ import mouse #control mouse
 import sys #mandar a llamar herramientas del sistema windows
 import time # para poder dar pausas al programa
 from win32api import GetSystemMetrics
-
-
     #Cuestionamos si requieren gacer una carga de archivos mas
     # Botones.
 OPT_YES = "Sí, estoy seguro"
@@ -30,6 +28,8 @@ if opt == OPT_YES:
     #alerta para ejecutar el programa
     pa.alert("¡Se comenzara a trabajar! \r\n\r\n Porfavor presiona boton aceptar", "¡NO INTERRUMPAS!")
     #iniciamos el programa de puty
+    subprocess.Popen(["C:\delete\delete.bat"])
+    time.sleep(1.0)
     subprocess.Popen(["C:\Soporte_tda\Emuladores\Putty\putty.exe"])
     pa.doubleClick(x=652, y=413, duration=0.7)
     time.sleep(1.5)
@@ -46,7 +46,7 @@ if opt == OPT_YES:
     #escribimos contraseña
     #mouse.move(x=652, y=413, duration=0.8)
     time.sleep(1.5)
-    pa.write('Oct128sa' , interval=1.0)
+    pa.write('Dici2021' , interval=1.0)
     pa.press("enter")
     #ingresamos una opcion (inventario fisico)
     time.sleep(3.5)
@@ -79,7 +79,7 @@ if opt == OPT_YES:
     #ejecutamos el archivo bat que elimina los archivos antenieriores
     subprocess.Popen(["C:\delete\delete.bat"])
     #iniciarmos el programa de inventario para correr los archivos
-    time.sleep(5.5)
+    time.sleep(2.5)
     subprocess.Popen(["C:\Sistemas\Inventario\Inv_Rec.bat"])
     time.sleep(1.5)
     #abrimos el programa de comunicacion de la pc a una tp

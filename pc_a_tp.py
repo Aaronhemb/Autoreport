@@ -3,8 +3,6 @@ Programa para generar teoricos automaticamente
 
 Autor: Aaron Hernandez
 """
-
-
 import os # libreria que me permite dar direccion a exe
 import subprocess
 import pyautogui #control teclado
@@ -14,8 +12,29 @@ import autopy
 import mouse #control mouse
 import sys #mandar a llamar herramientas del sistema windows
 import time # para poder dar pausas al programa
+import pyperclip as clipboard #guarda en nuestros porta papeles informacion que queramos copiar
 from win32api import GetSystemMetrics
 
+pa.alert("Antes de comenzar eliminaremos el archivo SKU de la tp para no duplicar informacion en la tp")
+os.startfile('C:')
+clipboard.copy("Equipo/tp1/\/My Documents/Datos_TP")
+time.sleep(1.5)
+#precionamos la tecla f4
+pa.press('f4')
+#precionamos la tecla retroceso
+ps.press("delete")
+ps.press("Eliminar")
+ps.press("Eliminar")
+#precionamos el conjunto de teclas ctl + v
+#enter
+#precinamos el conjunto de teclas ctl + e
+#precionamos la tecla suprimir
+#enter
+
+
+
+#pinche imbecil no olvides que las teclas ctl + e seleccionan todos los archivos de la carpeta para eliminarlos jajajajaja tontooooooooo
+"""
 #El programa realiza la carga de los archivos generados a la tp
 subprocess.Popen(["C:\Program Files\Tec\Comunicacion_PDT_PC\Comunicacion_PDT_PC.exe"]) #Se envia a llamar al programa que nos permite cargar las tp con windows mobile
 #realizamos una espera de opcion ya que nos debe de aparecer conectado y el tiempo dependera del usuario
@@ -106,3 +125,4 @@ if opt == OPT_YES:
 
 elif opt == OPT_NO_CLOSE:
     pa.hotkey('alt', 'f4')
+"""
