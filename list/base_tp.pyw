@@ -10,6 +10,7 @@ import pyautogui #control teclado
 import pyautogui as pa #se renombra para que sea mas facil la escritura
 import random
 import autopy
+import cv2
 import mouse #control mouse
 import sys #mandar a llamar herramientas del sistema windows
 import time # para poder dar pausas al programa
@@ -26,19 +27,19 @@ opt = pa.confirm(
 )
 if opt == OPT_YES:
     #alerta para ejecutar el programa
-    pa.alert("¡Se comenzara a trabajar! \r\n\r\n Porfavor presiona boton aceptar", "¡NO INTERRUMPAS!")
+    #pa.alert("¡Se comenzara a trabajar! \r\n\r\n Porfavor presiona boton aceptar", "¡NO INTERRUMPAS!")
     #iniciamos el programa de puty
     subprocess.Popen(["C:\delete\delete.bat"])
     time.sleep(1.0)
     #subprocess.Popen(["C:\Soporte_tda\Emuladores\Putty\putty.exe"])
     r = None
     while r is None:
-        r = pa.locateOnScreen('putty.PNG', grayscale = True,confidence=0.5 )
+        r = pa.locateOnScreen('images\putty.PNG', grayscale = True,confidence=0.5 )
     pa.click(r)
     time.sleep(1.0)
     s = None
     while s is None:
-        s = pa.locateOnScreen('session.PNG', grayscale = True,confidence=0.5 )
+        s = pa.locateOnScreen('images\session.PNG', grayscale = True,confidence=0.5 )
     pa.doubleClick(s)
     #pa.locateOnScreen('session.PNG')
     #pa.doubleClick('session.PNG')
@@ -51,12 +52,19 @@ if opt == OPT_YES:
     #ejecuta la session de genesix
     #pa.doubleClick(x=652, y=413, duration=0.7)
     #escribimos usuario
-    pa.write('gxain128' , interval=0.5)
+    f = open ('../usuario.txt','r')
+    mensaje = f.read()
+    pa.write(mensaje, interval=0.5)
+    f.close()
     pa.press("enter")
     #escribimos contraseña
     #mouse.move(x=652, y=413, duration=0.8)
     time.sleep(1.5)
-    pa.write('Dici2021' , interval=0.5)
+    time.sleep(1.5)
+    f = open ('..\password.txt','r')
+    mensaje = f.read()
+    pa.write(mensaje , interval=0.5)
+    f.close()
     pa.press("enter")
     #ingresamos una opcion (inventario fisico)
     time.sleep(2.5)
@@ -90,17 +98,19 @@ if opt == OPT_YES:
     subprocess.Popen(["C:\delete\delete.bat"])
     #iniciarmos el programa de inventario para correr los archivos
     time.sleep(1.5)
-    i = None
-    while i is None:
-        i = pa.locateOnScreen('inventario4.PNG', grayscale = True,confidence=0.5 )
-        print(i)
-        pa.click(r)
+    m = None
+    while m is None:
+        m = pa.locateOnScreen('images\inventario3.PNG', grayscale = True,confidence=0.5 )
+    pa.click(m)
     #pa.locateOnScreen('inventario.PNG')
     #pa.click('inventario.PNG')
-    time.sleep(1.0)
+    time.sleep(2.0)
     pa.write("128", interval = 1.0)
     #pa.locateOnScreen('recibi_inv.PNG')
-    pa.click('recibi_inv.PNG')
+    r = None
+    while r is None:
+        r = pa.locateOnScreen('images\dar.PNG' )
+    pa.click(r)
     time.sleep(1.5)
     #abrimos el programa de comunicacion de la pc a una tp
     pa.alert("¡Eh terminado , preciona aceptar para cerrar el programa!", button="Aceptar")#pregunta al usuario si esta contento con lo que e hizo

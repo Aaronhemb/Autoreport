@@ -1,0 +1,7 @@
+open 140.240.11.1
+gxain128
+Dici2021
+cd "/reportes_gnx/tiendas"
+hash
+get plano.128 TEORICOS.txt
+quit

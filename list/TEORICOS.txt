@@ -1,0 +1,60 @@
+
+
+E%1A&k3G&l1O&l63F&l8D(s22H
+*****************************************************************************************************************************************************************************************************************
+*SEARS ROEBUCK DE MEXICO S.A. DE C.V.                                                                                                                                                                            *
+*                                                                                                                                                                        PROGRAMA: gen3009x                     *
+*                                                                                                            DETALLE DE CONTEO FISICO                                                                           *
+*                                                                                                                 INVENTARIO                                             FECHA: 17/12/2021                      *
+*        TIENDA  :    128 SAN ANGEL                                                                                                                                      PAGINA:1                               *
+****************************************************************************************************************************************************************************************************************
+
+  PROVEEDOR         SKU                   EAN              DESCRIPCION                     EXI.TEORICA    EXI.FISICA     DIFERENCIAS     MUEBLE        ST                                    COMENTARIO
+  ---------         ---                   ---              -----------                     -----------    -----------    ------------    ------        --                                    ----------
+
+         Division:0020 MAQUINAS COSER Y ASPIRADORAS       
+        9514           2488890       12502631408  MAQUINA DE COSER BROTHER CON 27 PUNTADAS        2.00          2.00           0.00        1                0                                 
+        9514           2488915       12502644002  MAQUINA DE COSER 2 PUNTADAS RECTA Y ZIGZ        3.00          2.00          -1.00        1                0                                 
+        9514           2488957       12502643753  MAQUINA DE COSER BROTHER CON 14 PUNTADAS        4.00          2.00          -2.00        1                0                                 
+     1005659           3539006      374318843742  MAQUINA MECANICA SINGER 12 PUNTADAS             8.00          0.00          -8.00                         0                                 
+       60475           8499594       99053056850  ASPIRADORA MULTIUSOS KOBLENZ ANIV. DEBOR        2.00          0.00          -2.00                         0                                 
+     1005659          15984199     7393033102722  MAQUINA DE COSER MECANICA 6 PUNTADAS M16        1.00          0.00          -1.00                         0                                 
+     1005659          15984260     7393033102784  MAQUINA DE COSER MECANICA 23 PUNTADAS M3        2.00          0.00          -2.00                         0                                 
+     1005659          15984304     7393033102746  MAQUINA DE COSER MECANICA 32 PUNTADAS M3        2.00          0.00          -2.00                         0                                 
+       60475          16994015       99053056959  ASPIRADORA CANISTER KOBLENZ TITANIUM II         5.00          0.00          -5.00                         0                                 
+       60475          18878754       99053057000  ASPIRADORA INALAMBRICA KOBLENZ VENUS            1.00          0.00          -1.00                         0                                 
+       60475          18878781       99053056928  APIRADORA INALAMBRICA KOBLENZ ORION             1.00          0.00          -1.00                         0                                 
+     1005659          21061601     7393033112059  MAQUINA DE COSER MECANICA OVERPRO HD0405        3.00          0.00          -3.00                         0                                 
+     1005659          21065330     7393033095727  MAQUINA DE COSER MECANICA FASHION MATE 3        6.00          0.00          -6.00                         0                                 
+     1005659          31486938     7502234731161  MÁQUINA  DE USO RUDO FACILITA PRO 4411          4.00          0.00          -4.00                         0                                 
+       60475          53504322       99053056065  ASPIRADORA CANISTER CENTAURI NARANJA            2.00          0.00          -2.00                         0                                 
+     1005659          64194656     4996856111334  MAQUINA DE COSER 80 PUNTADAS STARLET 668        3.00          0.00          -3.00                         0                                 
+       60475          66788869       99053056393  ASPIRADORA ALPHA NARANJA CANISTER BAGLES        3.00          0.00          -3.00                         0                                 
+       60475          66788887       99053056355  ASPIRADORA STYLE MULTIUSOS BLANCA/ROSA P        1.00          0.00          -1.00                         0                                 
+
+                                                                                                   53.00          6.00        -47.00
+
+                                                                                                   53.00          6.00        -47.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
